@@ -1,7 +1,6 @@
 #ifndef DEF_FENETRE
 #define DEF_FENETRE
 
-
 #include <gtkmm/window.h>                                   //car on va herité de fenetre
 #include <gtkmm/box.h>                                      //modele de boite
 #include <gtkmm/buttonbox.h>                                //modele de boite pour les bouttons
@@ -15,7 +14,9 @@
 #include <gtkmm/messagedialog.h>                            //boite de dialogue
 #include <gtkmm/entry.h>
 #include <gtkmm/alignment.h>
+#include <gtkmm/cssprovider.h>
 
+#include "Donnee.hpp"       //pour les donnés du jeu
 
 class Fenetre : public Gtk::Window {
     public :
@@ -24,15 +25,15 @@ class Fenetre : public Gtk::Window {
         void cacherBouttonNewEtLoad();
         void sauvegarde();
         void afficheChoixLevel();
-        void play();
-        void afficheTextEdit();
-        void afficheLettre();
+        void cacherChoixLevel();
+        void play(int niveau);
+        void niveau1();
+    
+        void afficheBouttonValider();
+        void afficheLettreAlleatoire();
         void afficheZoneDeTextRepose();
     private:
-
-    GdkColor color;
-
-
+        Donnee donnerJeu;
 
         Gtk::VBox boitePrincipale;
             Gtk::VBox boiteHaut;    
@@ -51,6 +52,7 @@ class Fenetre : public Gtk::Window {
                 Gtk::HButtonBox boiteBouttonH;
                     Gtk::Button nouveau;
                     Gtk::Button load;
+                        Gtk::Label textChoixNiveau;
                         Gtk::Button level1;                 //boutton pour le niveau 1
                         Gtk::Button level2;                 //boutton pour le niveau 2
                         Gtk::Button level3;                 //boutton pour le niveau 3
