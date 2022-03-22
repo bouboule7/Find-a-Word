@@ -10,7 +10,7 @@ button{
 #menuText:hover{
     background-color: rgb(221, 255, 0);
 }
-#menuEnregistrer, #menuQuitter, #menuNouveau{
+#menuRetour, #menuQuitter, #menuNouveau{
     background-color: rgb(35, 29, 29);
     color: white;
 }
@@ -18,22 +18,24 @@ button{
     background-color: black;
     color: rgb(4, 125, 255);
 }
-#menuEnregistrer:hover{
+#menuRetour:hover{
     background-color: black;
-    color: rgb(4, 255, 4);
+    color: rgb(255, 255, 4);
 }
 #menuQuitter:hover{
     background-color: black;
     color: red;
 }
 #boiteAlignement{
-    background-color: rgb(240, 47, 47);
-}
-#boiteBoutton{
-    background-color: rgb(240, 47, 47);
+    background-image:  url("data.data/img/fond.jpeg");
+    background-size: cover;
 }
 #boiteCorps{
-    background-color: rgb(82, 184, 15);
+    background-image:  url("data.data/img/fond2.jpeg");
+    background-size:cover;
+}
+ #lettreAlleatoire{
+    margin: 20px;
 }
 #nouveau{
     font-size: xx-large;
@@ -51,8 +53,7 @@ button{
     color: rgb(0, 247, 0);
 }
 #textChoixNiveau{
-    color: white;
-    background-color: turquoise;
+    color: rgb(247, 245, 245);
     margin: 50px;
 }
 #level1, #level2, #level3, #level4, #level5{
@@ -65,16 +66,113 @@ button{
 }
 #textReponse{
     font-size: 40px;
-    margin: 60px 100px -10px;
+    margin: 30px 100px 0px;
 }
 #lettreAlleatoire{
     font-size: 90px;
 }
+#nextRouge{
+    font-size: 20px;
+    margin: 10px 140px 35px;
+    color: rgb(17, 254, 5);
+}
+#reponseVraie{
+    font-size: 90px;
+    margin: 10px 80px 30px;
+    color: rgb(33, 249, 0);
+}
+#reponseFaux{
+    font-size: 90px;
+    margin: 10px 80px 30px;
+    color: rgb(249, 17, 0);
+}
 #valider{
     font-size: xx-large;
-    margin: 0px 150px 50px;
+    margin: 10px 150px 30px;
     color: rgb(8, 106, 3);
 }
 #valider:hover{
     color: rgb(42, 252, 0);
+}
+#a, #b,#c,#d,#e,#f,#g,#h,#i,#j,#k,#l,#m,#n,#o,#p,#q,#r,#s,#t,#u,#v,#w,#x,#y,#z{
+    margin: 0px 10px;
+    background-size:cover;
+}
+#a{
+    background-image: url("data.data/img/a.png"); 
+}
+#b{
+    background-image:  url("data.data/img/b.png"); 
+}
+#c{
+    background-image:  url("data.data/img/c.png"); 
+}
+#d{
+    background-image:  url("data.data/img/d.png"); 
+}
+#e{
+    background-image:  url("data.data/img/e.png"); 
+}
+#f{
+    background-image:  url("data.data/img/f.png"); 
+}
+#g{
+    background-image:  url("data.data/img/g.png"); 
+}
+#h{
+    background-image:  url("data.data/img/h.png"); 
+}
+#i{
+    background-image:  url("data.data/img/i.png"); 
+}
+#j{
+    background-image:  url("data.data/img/j.png"); 
+}
+#k{
+    background-image:  url("data.data/img/h.png"); 
+}
+#l{
+    background-image:  url("data.data/img/l.png"); 
+}
+#m{
+    background-image:  url("data.data/img/m.png"); 
+}
+#n{
+    background-image:  url("data.data/img/n.png"); 
+}
+#o{
+    background-image:  url("data.data/img/o.png"); 
+}
+#p{
+    background-image:  url("data.data/img/p.png"); 
+}
+#q{
+    background-image:  url("data.data/img/q.png"); 
+}
+#r{
+    background-image:  url("data.data/img/r.png"); 
+}
+#s{
+    background-image:  url("data.data/img/s.png"); 
+}
+#t{
+    background-image:  url("data.data/img/t.png"); 
+}
+#u{
+    background-image:  url("data.data/img/u.png"); 
+}
+#v{
+    background-image:  url("data.data/img/v.png"); 
+}
+#w{
+    background-image:  url("data.data/img/w.png"); 
+}
+#x{
+    background-image:  url("data.data/img/x.png"); 
+}
+#y{
+    background-image:  url("data.data/img/y.png"); 
+}
+#z{
+    background-image:  url("data.data/img/z.png");
 }
